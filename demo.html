@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+       
+</head>
+
+<body>
+
+    <div class="container1" id="top_box">
+        <div class="game_name">
+            <h1>Rock <br>Paper<br> Scissors</h1>
+        </div>
+        <div class="scoreboard">
+            <div class="score-computer">
+                <p>COMPUTER<br>SCORE</p><span id="computer-score">0</span>
+            </div>
+            <div class="score-human">
+                <p>YOUR<br>SCORE</p><span id="player-score">0</span>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="game">
+            <div class="upper">
+                <div class="brn_1"><button class="btn" id="rock" onclick="showBox2('rock')"><img
+                            src="images/ROCK.png"></button></div>
+                <div class="line1"></div>
+                <div class="brn_2"><button class="btn" id="paper" onclick="showBox2('paper')"><img
+                            src="images/PAPER.png"></button></div>
+            </div>
+
+            <div class="line2"></div>
+
+            <div class="brn_3"><button class="btn" id="scissors" onclick="showBox2('scissors')"><img
+                        src="images/SCISER.png"></button></div>
+
+            <div class="line3"></div>
+        </div>
+    </div>
+    <div class="result_container">
+        <div class="player1">
+            <p>YOU PICKED</p>
+            <div class="concentric-circles set1">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle">
+                    <img id="rockImg" class="pics" src="/images/ROCK.png" alt="Rock">
+                    <img id="paperImg" class="pics" src="/images/PAPER.png" alt="Paper">
+                    <img id="scissorsImg" class="pics" src="/images/SCISER.png" alt="Scissors">
+                </div>
+            </div>
+            <div class="show_data1">
+                <button class="btn" id="rock" onclick="showBox2('rock')"><img id="xyz1" src=""></button>
+            </div>
+
+        </div>
+        <div class="result">
+            <h1 id="result-message"></h1>
+            <p id="">AGAINST PC</p>
+
+            <button id="play-again-button-css" onclick="hideBox2()">PLAY AGAIN</button>
+        </div>
+        <div class="player2">
+            <p>PC PICKED</p>
+            <div class="concentric-circles set2">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"><img id="cpt" src="">
+                </div>
+            </div>
+            <div class="show_data2">
+                <button class="btn" id="rock" onclick=""><img id="xyz"  src=""></button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="rules-popup" id="rules-popup">
+        <div class="popup-content">
+            <span class="close" id="close">&times;</span>
+            <h2>Rules</h2>
+            <p>Write your rules here</p>
+        </div>
+    </div>
+    <div class="last_btn" style="display: flex;">
+        <button class="rules-btn" id="rules">Rules</button>
+        <button class="next-button" id="next-button">Next</button>
+    </div>
+    
+     <script src="logic.js"></script>
+    
+</body>
+
+</html>
